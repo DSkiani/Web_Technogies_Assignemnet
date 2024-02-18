@@ -12,6 +12,7 @@ import { MapRepresentationComponent } from './map-representation/map-representat
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [ApplicationFormComponent]
 })
 export class FrontPageModule { }
