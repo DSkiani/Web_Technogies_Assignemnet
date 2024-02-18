@@ -1,18 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CurrentWeatherComponent } from './current-weather/current-weather.component';
-import { WeekWeatherForecastComponent } from './week-weather-forecast/week-weather-forecast.component';
-import { CurrentWeatherMapComponent } from './current-weather-map/current-weather-map.component';
-import { TodayHourlyWeatherForecastComponent } from './today-hourly-weather-forecast/today-hourly-weather-forecast.component';
+import { ApplicationFormComponent } from './application-form/application-form.component';
+import { MapRepresentationComponent } from './map-representation/map-representation.component';
 
 
 
 @NgModule({
   declarations: [
-    CurrentWeatherComponent,
-    WeekWeatherForecastComponent,
-    CurrentWeatherMapComponent,
-    TodayHourlyWeatherForecastComponent
+    ApplicationFormComponent,
+    MapRepresentationComponent
   ],
   imports: [
     CommonModule
