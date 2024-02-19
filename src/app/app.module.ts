@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FrontPageModule } from './front-page/front-page.module';
+import { FooterModule } from './footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FrontPageModule } from './front-page/front-page.module';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FrontPageModule
+    FrontPageModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
