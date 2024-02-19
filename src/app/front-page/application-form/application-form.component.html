@@ -1,1 +1,15 @@
-<p>application-form works!</p>
+<div>
+    <form (ngSubmit)="submitForm()" class="form-container">
+        <div class="input-group">
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" [(ngModel)]="country" class="form-control">
+        </div>
+        <div class="input-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" [(ngModel)]="city" class="form-control">
+        </div>
+        <div class="button-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
