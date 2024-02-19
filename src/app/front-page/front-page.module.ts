@@ -14,6 +14,9 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     FormsModule
   ],
-  exports: [ApplicationFormComponent]
+  exports: [
+    ApplicationFormComponent,
+    MapRepresentationComponent
+  ]
 })
 export class FrontPageModule { }
