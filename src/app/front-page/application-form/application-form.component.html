@@ -1,5 +1,7 @@
-<div>
-    <form (ngSubmit)="submitForm()" class="form-container">
+<div class="form-container">
+    <h2 class="form-title">Weather Radar Live</h2>
+    <p class="form-subtitle">Please provide us with your location</p>
+    <form (ngSubmit)="submitForm()" class="form">
         <div class="input-group">
             <label for="country">Country:</label>
             <input type="text" id="country" name="country" [(ngModel)]="country" class="form-control">
