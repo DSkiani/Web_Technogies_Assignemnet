@@ -1,8 +1,10 @@
-<div *ngIf="latitude !== undefined && longitude !== undefined">
-    <p>Your current location:</p>
-    <p>Latitude: {{ latitude }}</p>
-    <p>Longitude: {{ longitude }}</p>
+<div *ngIf="latitude !== undefined && longitude !== undefined" class="location-container">
+    <p class="location-info current-location">Your current location:</p>
+    <p class="location-info">Latitude: {{ latitude }}</p>
+    <p class="location-info">Longitude: {{ longitude }}</p>
+    <p class="location-info">City name:</p>
 </div>
-<div *ngIf="latitude === undefined || longitude === undefined">
-    <p>Unable to retrieve location.</p>
+
+<div *ngIf="latitude === undefined || longitude === undefined" class="location-container">
+    <p class="error-message">Unable to retrieve location.</p>
 </div>
