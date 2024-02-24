@@ -7,6 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FrontPageModule } from './front-page/front-page.module';
 import { FooterModule } from './footer/footer.module';
+import { MenuBarModule } from './menu/menu-bar.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterModule } from './footer/footer.module';
     ReactiveFormsModule,
     HttpClientModule,
     FrontPageModule,
-    FooterModule
+    FooterModule,
+    MenuBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
