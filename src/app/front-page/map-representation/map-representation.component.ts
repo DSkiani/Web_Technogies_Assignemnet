@@ -23,7 +23,7 @@ export class MapRepresentationComponent {
     }).addTo(this.map);
 
     L.marker([51.5, -0.09]).addTo(this.map)
-      .bindPopup('A sample location.')
+      .bindPopup('Please provide me with a location in the form above')
       .openPopup();
   }
 }
