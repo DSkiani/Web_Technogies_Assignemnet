@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FrontPageModule } from './front-page/front-page.module';
 import { FooterModule } from './footer/footer.module';
 import { MenuBarModule } from './menu/menu-bar.module';
+import { AllWeatherModule } from './all-weather/all-weather.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MenuBarModule } from './menu/menu-bar.module';
     HttpClientModule,
     FrontPageModule,
     FooterModule,
-    MenuBarModule
+    MenuBarModule,
+    AllWeatherModule
   ],
   providers: [],
   bootstrap: [AppComponent]
