@@ -4,7 +4,12 @@
     <form (ngSubmit)="submitForm()" class="form">
         <div class="input-group">
             <label for="city">City:</label>
-            <input type="text" id="city" name="city" [(ngModel)]="city" class="form-control">
+            <!-- Use ngModel to bind the selected city to the component -->
+            <select id="city" name="city" [(ngModel)]="city" class="form-control">
+                <option value="" disabled selected>Select a city</option>
+                <!-- Loop through cities array and create options for each city -->
+                <option *ngFor="let cityName of cities" [value]="cityName">{{ cityName }}</option>
+            </select>
         </div>
         <div class="button-group">
             <button type="submit" class="btn btn-primary">Submit</button>
