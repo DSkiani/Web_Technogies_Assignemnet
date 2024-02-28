@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { AllWeatherComponent } from './all-weather.component';
 import { AllWeatherRoutingModule } from './all-weather-routing.module';
 
-
 @NgModule({
   declarations: [
     AllWeatherComponent
