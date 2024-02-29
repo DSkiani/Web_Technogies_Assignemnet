@@ -16,3 +16,27 @@
         </div>
     </form>
 </div>
+<div *ngIf="weatherData">
+    <h3>{{ weatherData.message }}</h3>
+    <div *ngIf="!weatherData.error">
+        <table class="weather-table">
+            <tr>
+                <th>City</th>
+                <th>Temperature (°C)</th>
+                <th>Humidity (%)</th>
+                <th>Wind gust (km/h)</th>
+                <th>Precipitation (mm)</th>
+            </tr>
+            <tr>
+                <td>{{ weatherData.weather.City }}</td>
+                <td>{{ weatherData.weather.Temperature }}</td>
+                <td>{{ weatherData.weather.Humidity }}</td>
+                <td>{{ weatherData.weather['Wind gust'] }}</td>
+                <td>{{ weatherData.weather.Precipitation }}</td>
+            </tr>
+        </table>
+    </div>
+    <div *ngIf="weatherData.error">
+        <p>Error: {{ weatherData.error }}</p>
+    </div>
+</div>
