@@ -1,8 +1,10 @@
 <div *ngIf="latitude !== undefined && longitude !== undefined" class="location-container">
-    <p class="location-info current-location">Your current location:</p>
+    <p class="location-info current-location">Welcome to your weather dashboard:</p>
+    <p class="location-info">Your current coordinates:</p>
     <p class="location-info">Latitude: {{ latitude }}</p>
     <p class="location-info">Longitude: {{ longitude }}</p>
-    <p class="location-info">City name:</p>
+    <a class="location-info" href="https://www.e-education.psu.edu/meteo300/node/701"><b>Learn more about your
+            coordinates and weather!</b></a>
 </div>
 
 <div *ngIf="latitude === undefined || longitude === undefined" class="location-container">
