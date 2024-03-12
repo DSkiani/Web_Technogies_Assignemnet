@@ -9,6 +9,7 @@ import { FrontPageModule } from './front-page/front-page.module';
 import { FooterModule } from './footer/footer.module';
 import { MenuBarModule } from './menu/menu-bar.module';
 import { AllWeatherModule } from './all-weather/all-weather.module';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { AllWeatherModule } from './all-weather/all-weather.module';
     MenuBarModule,
     AllWeatherModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
