@@ -2,7 +2,8 @@
 .location-container {
     margin-bottom: 10px;
     margin-left: 10px;
-    background-color: rgb(252, 248, 242);
+    background-color: black;
+    color: white;
 }
 
 /* Styling for the paragraphs */
@@ -20,12 +21,12 @@
 .current-location {
     font-size: 24px;
     font-weight: bold;
-    color: #1E324A;
+    color: white;
 }
 
 /* Styling for the link */
 .location-info a {
-    color: #1E88E5;
+    color: whitesmoke;
     text-decoration: none;
 }
 
