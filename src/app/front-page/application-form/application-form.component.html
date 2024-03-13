@@ -1,18 +1,18 @@
-<div class="form-container">
+<div class="form-container" role="form">
     <h2 class="form-title">Weather Radar Live</h2>
     <p class="form-subtitle">Please provide us with your location</p>
     <form (ngSubmit)="submitForm()" class="form">
         <div class="input-group">
             <label for="city">City:</label>
             <!-- Use ngModel to bind the selected city to the component -->
-            <select id="city" name="city" [(ngModel)]="city" class="form-control">
+            <select id="city" name="city" [(ngModel)]="city" class="form-control" aria-label="Select a city">
                 <option value="" disabled selected>Select a city</option>
                 <!-- Loop through cities array and create options for each city -->
                 <option *ngFor="let cityName of cities" [value]="cityName">{{ cityName }}</option>
             </select>
         </div>
         <div class="button-group">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" aria-label="Submit form">Submit</button>
         </div>
     </form>
 </div>
