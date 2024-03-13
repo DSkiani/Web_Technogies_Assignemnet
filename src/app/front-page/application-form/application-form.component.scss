@@ -1,5 +1,5 @@
 .form-container {
-    border: 2px solid #ddd;
+    border: 2px solid #0E00F1;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
@@ -43,7 +43,7 @@
 }
 
 .btn:hover {
-    background-color: #83007D;
+    background-color: black;
 }
 
 .weather-table {
@@ -59,14 +59,15 @@
 }
 
 .weather-table th {
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: #0E00F1;
+    color: white;
 }
 
 .weather-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #0E00F1;
+    color: white;
 }
 
 .weather-table tr:hover {
-    background-color: #ddd;
+    background-color: black;
 }
